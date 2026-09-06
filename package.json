@@ -1,0 +1,30 @@
+{
+  "name": "technical-portfolio-timeline",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "wrangler dev --port 3000",
+    "preview": "wrangler dev --port 8787",
+    "deploy": "npm run build && wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "check:export": "node scripts/check-export.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.21.0",
+    "motion": "^12.41.0",
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^5.8.0",
+    "wrangler": "^4.129.0"
+  }
+}
